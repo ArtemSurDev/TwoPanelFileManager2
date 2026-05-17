@@ -1,0 +1,103 @@
+#include "FilePanel.h"
+#include "PathRestrictions.h"
+#include <QDir>
+#include <QKeyEvent>
+#include <QFocusEvent>
+#include <QMouseEvent>
+
+FilePanel::FilePanel(QWidget* parent) : QListWidget(parent) {
+    setFocusPolicy(Qt::StrongFocus);
+}
+
+void FilePanel::setPath(const QString& path) {
+    currentPath = path;
+    refresh();
+}
+
+QString FilePanel::getCurrentPath() const {
+    return currentPath;
+}
+
+QString FilePanel::getSelectedItem() const {
+    auto item = currentItem();
+    if (!item) return "";
+    return item->text();
+}
+
+void FilePanel::refresh() {
+    clear();
+    QDir dir(currentPath);
+    if (currentPath != "/") {
+        addItem("..");
+    }
+    for (const auto& file : dir.entryList(QDir::AllEntries | QDir::NoDotAndDotDot)) {
+        if (currentPath == QDir::rootPath() && isRestrictedPath(dir.filePath(file))) {
+            continue;
+        }
+        addItem(file);
+    }
+    
+    if (count() > 0) {
+        setCurrentRow(0);
+    }
+}
+
+void FilePanel::setActive(bool active) {
+    if (active) {
+        setStyleSheet("QListWidget { border: 2px solid #4A90D9; background-color: #1E1E2E; color: #CDD6F4; }"
+                       "QListWidget::item:selected { background-color: #4A90D9; color: white; }");
+    } else {
+        setStyleSheet("QListWidget { border: 1px solid #555; background-color: #181825; color: #A6ADC8; }"
+                       "QListWidget::item:selected { background-color: #45475A; color: #CDD6F4; }");
+    }
+}
+
+
+
+
+bool FilePanel::event(QEvent* e) {
+    if (e->type() == QEvent::KeyPress) {
+        QKeyEvent* ke = static_cast<QKeyEvent*>(e);
+        if (ke->key() == Qt::Key_Tab || ke->key() == Qt::Key_Backtab) {
+            emit tabPressed();
+            return true;  
+        }
+    }
+    return QListWidget::event(e);
+}
+
+void FilePanel::keyPressEvent(QKeyEvent* event) {
+    switch (event->key()) {
+        case Qt::Key_Return:
+        case Qt::Key_Enter:
+            emit enterPressed();
+            return;  
+        case Qt::Key_Backspace:
+            emit backspacePressed();
+            return;
+        case Qt::Key_F2:
+        case Qt::Key_F5:
+        case Qt::Key_F6:
+        case Qt::Key_F7:
+        case Qt::Key_F8:
+        case Qt::Key_F9:
+            emit functionKeyPressed(event->key());
+            return;
+        default:
+            QListWidget::keyPressEvent(event);
+            break;
+    }
+}
+
+
+void FilePanel::focusInEvent(QFocusEvent* event) {
+    QListWidget::focusInEvent(event);
+    emit panelFocused(this);
+}
+
+
+void FilePanel::mousePressEvent(QMouseEvent* event) {
+    QListWidget::mousePressEvent(event);
+    setFocus();
+    emit panelFocused(this);
+}
