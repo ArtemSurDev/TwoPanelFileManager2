@@ -97,7 +97,7 @@ cmake --build /Users/artem/CLionProjects/file_manager/cmake-build-debug
 **MainWindow** (`tests/MainWindowTest.cpp`)
 - конструктор и инициализация UI — 5 тестов (title, 2 панели, стартовые пути, статус‑строка, активная панель).
 
-## Соответствие заданию (по пунктам)
+## Соответствие заданию
 
 1) **Подключение Catch2 и сборка тестов в отдельную директорию**
    - Используется Catch2 v3, точка входа в `tests/TestMain.cpp`.
