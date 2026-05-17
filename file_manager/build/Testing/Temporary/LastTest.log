@@ -1,0 +1,41 @@
+Start testing: May 12 12:50 MSK
+----------------------------------------------------------
+1/1 Testing: file_manager_tests
+1/1 Test: file_manager_tests
+Command: "/Users/artem/CLionProjects/file_manager/build/file_manager_tests"
+Directory: /Users/artem/CLionProjects/file_manager/build
+"file_manager_tests" start time: May 12 12:50 MSK
+Output:
+----------------------------------------------------------
+********* Start testing of FileOperationsFacadeTest *********
+Config: Using QtTest library 6.11.0, Qt 6.11.0 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 17.0.0 (clang-1700.6.4.2)), macos 15.6.1
+PASS   : FileOperationsFacadeTest::initTestCase()
+PASS   : FileOperationsFacadeTest::copyFileCreatesDestinationAndCopiesContent()
+PASS   : FileOperationsFacadeTest::copyDirectoryRecursively()
+PASS   : FileOperationsFacadeTest::moveFileMovesAndRemovesSource()
+PASS   : FileOperationsFacadeTest::createAndRemoveDirectory()
+PASS   : FileOperationsFacadeTest::removeDirectoryRecursively()
+PASS   : FileOperationsFacadeTest::copyMissingFileSetsError()
+PASS   : FileOperationsFacadeTest::cleanupTestCase()
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 6ms
+********* Finished testing of FileOperationsFacadeTest *********
+********* Start testing of FileCommandTest *********
+Config: Using QtTest library 6.11.0, Qt 6.11.0 (arm64-little_endian-lp64 shared (dynamic) release build; by Apple LLVM 17.0.0 (clang-1700.6.4.2)), macos 15.6.1
+PASS   : FileCommandTest::initTestCase()
+PASS   : FileCommandTest::copyCommandExecuteAndUndo()
+PASS   : FileCommandTest::moveCommandExecuteAndUndo()
+PASS   : FileCommandTest::createDirCommandExecuteAndUndo()
+PASS   : FileCommandTest::renameCommandExecuteAndUndo()
+PASS   : FileCommandTest::deleteCommandUndoDoesNotRestoreFile()
+PASS   : FileCommandTest::cleanupTestCase()
+Totals: 7 passed, 0 failed, 0 skipped, 0 blacklisted, 3ms
+********* Finished testing of FileCommandTest *********
+<end of output>
+Test time =   0.52 sec
+----------------------------------------------------------
+Test Passed.
+"file_manager_tests" end time: May 12 12:50 MSK
+"file_manager_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 12 12:50 MSK

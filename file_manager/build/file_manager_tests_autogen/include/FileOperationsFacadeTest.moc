@@ -1,0 +1,220 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'FileOperationsFacadeTest.cpp'
+**
+** Created by: The Qt Meta Object Compiler version 69 (Qt 6.11.0)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include <QtCore/qmetatype.h>
+
+#include <QtCore/qtmochelpers.h>
+
+#include <memory>
+
+
+#include <QtCore/qxptype_traits.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'FileOperationsFacadeTest.cpp' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 69
+#error "This file was generated using the moc from 6.11.0. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+#ifndef Q_CONSTINIT
+#define Q_CONSTINIT
+#endif
+
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+QT_WARNING_DISABLE_GCC("-Wuseless-cast")
+namespace {
+struct qt_meta_tag_ZN24FileOperationsFacadeTestE_t {};
+} // unnamed namespace
+
+template <> constexpr inline auto FileOperationsFacadeTest::qt_create_metaobjectdata<qt_meta_tag_ZN24FileOperationsFacadeTestE_t>()
+{
+    namespace QMC = QtMocConstants;
+    QtMocHelpers::StringRefStorage qt_stringData {
+        "FileOperationsFacadeTest",
+        "copyFileCreatesDestinationAndCopiesContent",
+        "",
+        "copyDirectoryRecursively",
+        "moveFileMovesAndRemovesSource",
+        "createAndRemoveDirectory",
+        "removeDirectoryRecursively",
+        "copyMissingFileSetsError"
+    };
+
+    QtMocHelpers::UintData qt_methods {
+        // Slot 'copyFileCreatesDestinationAndCopiesContent'
+        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'copyDirectoryRecursively'
+        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'moveFileMovesAndRemovesSource'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'createAndRemoveDirectory'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'removeDirectoryRecursively'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'copyMissingFileSetsError'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+    };
+    QtMocHelpers::UintData qt_properties {
+    };
+    QtMocHelpers::UintData qt_enums {
+    };
+    return QtMocHelpers::metaObjectData<FileOperationsFacadeTest, qt_meta_tag_ZN24FileOperationsFacadeTestE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+            qt_methods, qt_properties, qt_enums);
+}
+Q_CONSTINIT const QMetaObject FileOperationsFacadeTest::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN24FileOperationsFacadeTestE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN24FileOperationsFacadeTestE_t>.data,
+    qt_static_metacall,
+    nullptr,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN24FileOperationsFacadeTestE_t>.metaTypes,
+    nullptr
+} };
+
+void FileOperationsFacadeTest::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    auto *_t = static_cast<FileOperationsFacadeTest *>(_o);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->copyFileCreatesDestinationAndCopiesContent(); break;
+        case 1: _t->copyDirectoryRecursively(); break;
+        case 2: _t->moveFileMovesAndRemovesSource(); break;
+        case 3: _t->createAndRemoveDirectory(); break;
+        case 4: _t->removeDirectoryRecursively(); break;
+        case 5: _t->copyMissingFileSetsError(); break;
+        default: ;
+        }
+    }
+    (void)_a;
+}
+
+const QMetaObject *FileOperationsFacadeTest::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *FileOperationsFacadeTest::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN24FileOperationsFacadeTestE_t>.strings))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int FileOperationsFacadeTest::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 6)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 6;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 6)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 6;
+    }
+    return _id;
+}
+namespace {
+struct qt_meta_tag_ZN15FileCommandTestE_t {};
+} // unnamed namespace
+
+template <> constexpr inline auto FileCommandTest::qt_create_metaobjectdata<qt_meta_tag_ZN15FileCommandTestE_t>()
+{
+    namespace QMC = QtMocConstants;
+    QtMocHelpers::StringRefStorage qt_stringData {
+        "FileCommandTest",
+        "copyCommandExecuteAndUndo",
+        "",
+        "moveCommandExecuteAndUndo",
+        "createDirCommandExecuteAndUndo",
+        "renameCommandExecuteAndUndo",
+        "deleteCommandUndoDoesNotRestoreFile"
+    };
+
+    QtMocHelpers::UintData qt_methods {
+        // Slot 'copyCommandExecuteAndUndo'
+        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'moveCommandExecuteAndUndo'
+        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'createDirCommandExecuteAndUndo'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'renameCommandExecuteAndUndo'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'deleteCommandUndoDoesNotRestoreFile'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+    };
+    QtMocHelpers::UintData qt_properties {
+    };
+    QtMocHelpers::UintData qt_enums {
+    };
+    return QtMocHelpers::metaObjectData<FileCommandTest, qt_meta_tag_ZN15FileCommandTestE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+            qt_methods, qt_properties, qt_enums);
+}
+Q_CONSTINIT const QMetaObject FileCommandTest::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN15FileCommandTestE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN15FileCommandTestE_t>.data,
+    qt_static_metacall,
+    nullptr,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN15FileCommandTestE_t>.metaTypes,
+    nullptr
+} };
+
+void FileCommandTest::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    auto *_t = static_cast<FileCommandTest *>(_o);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->copyCommandExecuteAndUndo(); break;
+        case 1: _t->moveCommandExecuteAndUndo(); break;
+        case 2: _t->createDirCommandExecuteAndUndo(); break;
+        case 3: _t->renameCommandExecuteAndUndo(); break;
+        case 4: _t->deleteCommandUndoDoesNotRestoreFile(); break;
+        default: ;
+        }
+    }
+    (void)_a;
+}
+
+const QMetaObject *FileCommandTest::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *FileCommandTest::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN15FileCommandTestE_t>.strings))
+        return static_cast<void*>(this);
+    return QObject::qt_metacast(_clname);
+}
+
+int FileCommandTest::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 5)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 5;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 5)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 5;
+    }
+    return _id;
+}
+QT_WARNING_POP

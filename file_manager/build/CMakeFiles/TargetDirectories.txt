@@ -1,0 +1,12 @@
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_core.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_tests.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/test.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/edit_cache.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/rebuild_cache.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_core_autogen_timestamp_deps.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_core_autogen.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_autogen_timestamp_deps.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_autogen.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_tests_autogen_timestamp_deps.dir
+/Users/artem/CLionProjects/file_manager/build/CMakeFiles/file_manager_tests_autogen.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfile_manager_core.a CMakeFiles/file_manager_core.dir/file_manager_core_autogen/mocs_compilation.cpp.o CMakeFiles/file_manager_core.dir/src/FileOperationsFacade.cpp.o CMakeFiles/file_manager_core.dir/src/FileCommand.cpp.o
+/usr/bin/ranlib libfile_manager_core.a

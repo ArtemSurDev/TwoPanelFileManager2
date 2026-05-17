@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_file_manager_core_FILE /Users/artem/CLionProjects/file_manager/build/libfile_manager_core.a)
+set(__QT_DEPLOY_TARGET_file_manager_core_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_file_manager_FILE /Users/artem/CLionProjects/file_manager/build/file_manager)
+set(__QT_DEPLOY_TARGET_file_manager_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_file_manager_tests_FILE /Users/artem/CLionProjects/file_manager/build/file_manager_tests)
+set(__QT_DEPLOY_TARGET_file_manager_tests_TYPE EXECUTABLE)
